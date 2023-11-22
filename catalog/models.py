@@ -9,7 +9,6 @@ from .utils.constants import LOAN_STATUS
 
 
 class Genre(models.Model):
-
     """Model representing a book genre."""
 
     name = models.CharField(max_length=200, help_text=_("Enter your book genre"))
