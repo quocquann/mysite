@@ -1,11 +1,13 @@
+{% load i18n %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    {% block title %}<title>Local Library</title>{% endblock %}
-    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet"href="{% static "boostrap/css/bootstrap.min.css" %}">
+    {% block title %}<title>{% translate "Local Library" %}</title>{% endblock %}
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">  
     <!-- Add additional CSS in static file -->
     {% load static %}
+    <link rel="stylesheet"href="{% static "boostrap/css/bootstrap.min.css" %}">
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
   </head>
   <body>

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-22 11:19+0700\n"
+"POT-Creation-Date: 2023-11-22 16:19+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,58 +30,116 @@ msgstr "Nhập nội dung tóm tắt"
 msgid "Select a genre for this book"
 msgstr "Chọn thể loại"
 
-#: .\catalog\templates\base_generic.html:17
+#: .\catalog\templates\base_generic.html:6
+msgid "Local Library"
+msgstr ""
+
+#: .\catalog\templates\base_generic.html:19
 msgid "Home"
 msgstr "Trang chủ"
 
-#: .\catalog\templates\base_generic.html:18
+#: .\catalog\templates\base_generic.html:20
 msgid "All books"
 msgstr "Tất cả sách"
 
-#: .\catalog\templates\base_generic.html:19
+#: .\catalog\templates\base_generic.html:21
 msgid "All authors"
 msgstr "Tất cả tác giả"
 
-#: .\catalog\templates\index.html:4
-msgid "Local Library Home"
+#: .\catalog\templates\catalog\book_detail.html:5
+msgid "Title:"
 msgstr ""
 
+#: .\catalog\templates\catalog\book_detail.html:6
+#, fuzzy
+#| msgid "Authors:"
+msgid "Author:"
+msgstr "Tác giả"
+
+#: .\catalog\templates\catalog\book_detail.html:8
+msgid "Summary:"
+msgstr "Tóm tắt"
+
+#: .\catalog\templates\catalog\book_detail.html:9
+msgid "ISBN:"
+msgstr "ISBN"
+
+#: .\catalog\templates\catalog\book_detail.html:10
+msgid "Language:"
+msgstr "Ngôn ngữ"
+
+#: .\catalog\templates\catalog\book_detail.html:11
+msgid "Genre:"
+msgstr "Thể loại"
+
+#: .\catalog\templates\catalog\book_detail.html:13
+#, fuzzy
+#| msgid "Copies:"
+msgid "Copies"
+msgstr "Bản sao:"
+
+#: .\catalog\templates\catalog\book_detail.html:20
+msgid "Due to be returned:"
+msgstr "Hạn trả:"
+
+#: .\catalog\templates\catalog\book_detail.html:22
+msgid "Imprint:"
+msgstr "Xuất bản lần thứ:"
+
+#: .\catalog\templates\catalog\book_detail.html:23
+msgid "Id:"
+msgstr "Id:"
+
+#: .\catalog\templates\catalog\book_list.html:6
+#, fuzzy
+#| msgid "Books:"
+msgid "Book List"
+msgstr "Sách:"
+
+#: .\catalog\templates\catalog\book_list.html:14
+msgid "There are no books in the library."
+msgstr "Không có quyển sách nào trong thư viện"
+
 #: .\catalog\templates\index.html:5
+msgid "Local Library Home"
+msgstr "Trang chủ thư viện"
+
+#: .\catalog\templates\index.html:6
 msgid "Welcome to LocalLibrary, a website developed by"
 msgstr "Chào mừng bạn đến với LocalLibrary, 1 website được phát triển bởi"
 
-#: .\catalog\templates\index.html:6
+#: .\catalog\templates\index.html:7
 msgid "Dynamic content"
 msgstr ""
 
-#: .\catalog\templates\index.html:7
+#: .\catalog\templates\index.html:8
 msgid "The library has the following record counts:"
 msgstr "Thư viên có số lượng các bản ghi dưới đây"
 
-#: .\catalog\templates\index.html:9
+#: .\catalog\templates\index.html:10
 msgid "Books:"
 msgstr "Sách:"
 
-#: .\catalog\templates\index.html:10
+#: .\catalog\templates\index.html:11
 msgid "Copies:"
 msgstr "Bản sao:"
 
-#: .\catalog\templates\index.html:11
+#: .\catalog\templates\index.html:12
 msgid "Copies available:"
 msgstr "Bản sao có sẵn"
 
-#: .\catalog\templates\index.html:12
+#: .\catalog\templates\index.html:13
 msgid "Authors:"
 msgstr "Tác giả"
 
-#: .\locallibrary\settings.py:133
+#: .\locallibrary\settings.py:136
 msgid "German"
 msgstr "Tiếng Đức"
 
-#: .\locallibrary\settings.py:133
+#: .\locallibrary\settings.py:136
 msgid "English"
 msgstr "Tiếng Anh"
 
-#: .\locallibrary\settings.py:133
+#: .\locallibrary\settings.py:136
 msgid "Vietnamese"
 msgstr "Tiếng Việt"
