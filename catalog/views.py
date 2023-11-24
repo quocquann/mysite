@@ -1,7 +1,9 @@
+from typing import Any
 from django.shortcuts import render
 from catalog.models import Book, BookInstance, Genre, Author
 from django.views import generic
 from django.shortcuts import get_object_or_404
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 
 # Create your views here.
 
@@ -41,6 +43,14 @@ class BookListView(generic.ListView):
 
 class BookDetailView(generic.DetailView):
     model = Book
+
+
+class LoanBookByUserListView(LoginRequiredMixin, generic.ListView):
+    model = BookInstance
+
+    queryset = BookInstance.objects.filter(status="o")
+    context_object_name = "bookinstance_list"
+    template_name = "catalog/bookinstance_list_borrowed_user.html"
 
 
 def book_detail_view(request, primary_key):

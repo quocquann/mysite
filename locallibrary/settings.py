@@ -61,7 +61,7 @@ ROOT_URLCONF = "locallibrary.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [os.path.join(BASE_DIR, "templates")],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -136,3 +136,6 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 LANGUAGES = [("de", _("German")), ("en", _("English")), ("vi", _("Vietnamese"))]
 
 LOCALE_PATHS = (str(BASE_DIR) + "locale/",)
+LOGIN_REDIRECT_URL = "/"
+
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
